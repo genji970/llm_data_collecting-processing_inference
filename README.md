@@ -9,7 +9,7 @@ pipeline building to get pdf files and fine tune pretrained model, lastly use th
 
 ## how to run ## 
 1) You need to set export OPENAI_API_KEY="your-openai-api-key" in terminal 
-2) You need to change base_path , input_folder_path , output_folder_path , parsing_output_folder_path in master.config<br>
+2) You need to change base_path , input_folder_path , output_folder_path , parsing_output_folder_path in master.config, later will add os.path.dirname(__file__),abspath<br>
 3) put code `python -m master.main fine_tuning mode` in terminal<br>
    fine_tuning mode = ['True' , 'False']<br>
    You will see pdf -> chunk -> model train -> inference
